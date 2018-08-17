@@ -1,0 +1,14 @@
+.upload {
+	display: none;
+}
+
+.moreInfoText {
+	display: none;
+}
+
+.buttons {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 80px;
+	margin-right: 40px;
+}

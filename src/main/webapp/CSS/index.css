@@ -1,0 +1,43 @@
+body {
+	display: flex;
+}
+
+.header {
+	padding: 40px;
+	color: black;
+	padding: 40px;
+	margin: -20px -25px 10px;
+	border-radius: 3px 3px 0 0;
+}
+
+#sidebar-container {
+	width: 250px;
+	z-index: 999;
+}
+
+#collapse-button-container {
+	padding-top: 20px;
+}
+
+#content-container {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 250px);
+	padding-left: 40px;
+	min-height: 100vh;
+	transition: all 0.3s;
+	position: absolute;
+	top: 0;
+	left: 250px;
+}
+
+#sidebar.active #content-container {
+	width: calc(100% - 80px);
+	left: 80px;
+}
+
+@media ( max-width : 768px) {
+	#content-container {
+		width: 100%;
+	}
+}
